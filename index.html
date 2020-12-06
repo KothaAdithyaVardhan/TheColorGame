@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Color Game</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="p-3 bg-info text-white text-center font-weight-bold" id="top">
+            <h1>The Great
+                <br>
+                <span id="colorDisplay" style="font-size: 60px;">RGB</span>
+                <br>
+                Color Game
+            </h1>
+        </div>
+
+        <div class="mb-2 bg-white text-dark row justify-content-around">
+            <button id="reset" class="btn btn-outline-info">New Colors</button>
+            <h4><span class="badge badge-pill" id="message"></span></h4>
+            
+            <div class="justify-content-end">
+                <button class="mode btn btn-outline-info">Easy</button>
+                <button class="mode btn btn-info">Hard</button>
+            </div>
+        </div>
+
+        <div id="shape">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+	
+	<script src = "game.js"></script>
+</body>
+</html>
